@@ -22,7 +22,7 @@ int main()
 
 	cout << "weight: " << weight(v) << endl;
 
-	cout << endl << endl << "time elapsed: "<< float(clock() - start) / CLOCKS_PER_SEC << endl;
+	cout << "time elapsed: "<< float(clock() - start) / CLOCKS_PER_SEC << endl;
 
 	return 0;
 }
