@@ -20,22 +20,12 @@ int weight(value * val)
 
 		void visit(object_value * v) 
 		{
-			int length = v->val.size();
-			++w;
-			for(auto & item : v->val)
-			{
-				w += weight(item.second);
-			}
+			w += 1 + v->val.size();
 		};
 
 		void visit(array_value * v) 
 		{
-			int length = v->val.size();
-			++w;
-			for(int i = 0; i < length; ++i)
-			{
-				w += weight(v->val.at(i));
-			}
+			w += 1 + v->val.size();
 		};
 
 		void visit(bool_value * v) 
